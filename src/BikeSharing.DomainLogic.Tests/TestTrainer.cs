@@ -44,12 +44,6 @@ namespace Trainer.Tests
             Assert.ThrowsException<ArgumentNullException>(() => new WorkOut(10, TimeSpan.FromMinutes(45), null));
         }
 
-        //[TestMethod]
-        //public void TestDurationRequired()
-        //{
-        //    Assert.ThrowsException<ArgumentNullException>(() => new WorkOut(10, new TimeSpan(0, 0, 0), "Workout without duration"));
-        //}
-
         [TestMethod]
         public void AddingWorkoutAddsMilesTravelled()
         {

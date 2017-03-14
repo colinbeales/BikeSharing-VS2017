@@ -139,22 +139,6 @@ namespace Trainer
 			return true;
 		}
 
-        /*
-		public async Task<bool> SaveIntensitySummaryAsync(string url)
-		{
-			using (StreamWriter writer = File.CreateText(url))
-			{
-				await writer.WriteLineAsync("Intensity, Count");
-				var intensities = GetAllIntensities();
-
-				foreach (var (k,v) in intensities)
-				{
-					await writer.WriteLineAsync(string.Format("{0},{1}", k, v));
-				}
-			}
-			return true;
-		}*/
-
 		public List<string> TweetifyWorkouts()
 		{
 			var listOfTweets = new List<string>();
